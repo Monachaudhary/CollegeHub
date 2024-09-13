@@ -1,4 +1,4 @@
-window.onload = function sendmail(){
+function sendmail(){
     var params ={
       
         message : document.getElementById("message").value,
