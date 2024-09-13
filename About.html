@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CollegeHub - Home</title>
+    <link rel="stylesheet" href="about.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ewert&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>CollegeHub</h1>
+            </div>
+            <ul class="sidebar" >
+                <li (click)="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="features.html">Services</a></li>
+                <li><a href="contact.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+              </ul>
+            <nav>
+                <ul class="hidemobile">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="features.html">Features</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+                    <li class="menu-button" (click)="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
+                
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <div class="about-container">
+            <div class="about-content">
+                <h1>About &hearts;</h1>
+                <p class="intro">Hi! I'm <strong>Manu Chaudhary</strong>, a tech enthusiast and coding lover. I'm passionate about solving real-world problems and simplifying student life, so they can focus on what truly matters. </p>
+                <p>I believe in using technology to create impactful solutions, especially for students who are juggling various academic tasks. From assignment management to project reports, my goal is to make their journey smoother, more efficient, and stress-free.</p>
+                <p>I hail from the vibrant land of <strong>India &hearts;</strong>, and I take immense pride in my culture and heritage. Every step I take is rooted in my love for my country and my desire to contribute to its growth and innovation.</p>
+                <p>Let's embark on a journey of innovation, together!</p>
+            </div>
+        </div>
+    </main>
+    
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 CollegeHub | All Rights Reserved</p>
+    </footer>
+    <script src="index.js"></script>
+
+</body>
+</html>

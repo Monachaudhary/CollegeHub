@@ -1,0 +1,200 @@
+/* Reset basic margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Style */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+    background: linear-gradient(135deg, #f0f8ff, #bbfff8);
+    
+}
+
+/* Header Style */
+header {
+    background-color: #7de4f4;
+    color: white;
+    padding: 1em 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Logo Style */
+.logo h1 {
+    margin-left: 10px;
+    font-family: "Ewert", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: black;
+}
+
+/* Navigation Menu */
+nav ul {
+    list-style: none;
+    font-size: 20px;
+    
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 5px 10px;
+    list-style: none;
+}
+
+nav ul li a:hover {
+    background-color: #166874;
+    border-radius: 4px;
+    
+}
+
+/* Sidebar Styles */
+.sidebar {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    background-color: #7de4f4;
+    color: white;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
+    z-index: 101;
+    list-style: none;
+}
+.sidebar ul{
+    list-style: none;
+}
+
+.sidebar a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    margin: 5px 0;
+    
+}
+
+.sidebar a:hover {
+    background-color: #166874;
+}
+
+/* Hide sidebar toggle on large screens */
+.hidemobile {
+    display: block;
+}
+
+/* Show sidebar and menu on mobile */
+.menu-button {
+    display: none; /* Hidden by default */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hidemobile {
+        display: none; /* Hide desktop menu */
+    }
+
+    .menu-button {
+        display: block; /* Show menu button on mobile */
+    }
+}
+main {
+    margin-top: 80px; /* To avoid content being under the header */
+    padding: 20px;
+    text-align: center;
+}
+
+h2 {
+    color: #333;
+}
+
+/* Footer */
+footer {
+    background-color: #036a6c;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+/* main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+} */
+
+.services {
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.services p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+.service-box {
+    background-color: #f5fbca;
+    border: 2px solid #0056b3;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    display: inline-block;
+    width: 250px;
+    vertical-align: top;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+
+}
+
+.service-box:hover {
+    transform: translateY(-10px);
+}
+
+.service-box h3 {
+    font-size: 22px;
+    color: #0056b3;
+}
+
+.service-box p {
+    font-size: 16px;
+    color: #666;
+}
+

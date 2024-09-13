@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CollegeHub - Home</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ewert&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>CollegeHub</h1>
+            </div>
+            <ul class="sidebar" >
+                <li (click)="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="features.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+              </ul>
+            <nav>
+                <ul class="hidemobile">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="features.html">Features</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+                    <li class="menu-button" (click)="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
+                
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <div class="contact">
+            <h2>Get in Touch</h2>
+            <p>We’re here to help! Fill in the form below and let us know what you need assistance with.</p>
+
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Enter your name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Enter your email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Details</label>
+                    <textarea id="message" placeholder="How can we help you?" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="services">Services Needed</label>
+                    <select id="services" required>
+                        <option value="" disabled selected>Select a service</option>
+                        <option value="project">Project Report</option>
+                        <option value="assignment">Assignment Help</option>
+                        <option value="bonafide">Bonafide Format</option>
+                        <option value="certificate">Provisional Certificate</option>
+                        <option value="marksheet">Marksheet Assistance</option>
+                        <option value="notes">Notes Making</option>
+                        <option value="presentation">Presentation Making</option>
+                    </select>
+                </div>
+
+                <button type="submit" onclick="sendmail()">Submit</button>
+            </form>
+        </div>
+    </main>
+
+    <div class="contact-container">
+        <h2>Contact Us</h2>
+        <p>If you have any questions, feel free to reach out to us at:</p>
+        <a href="mailto:manuchaudhary991@gmail.com" class="email-link">manuchaudhary991@gmail.com</a>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 CollegeHub | All Rights Reserved</p>
+    </footer>
+    <script src="contact.js"></script>
+    <script type="text/javascript"
+src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+(function(){
+emailjs.init({
+publicKey: "J-kQj9zmQVikyCIYs",
+});
+})();
+</script>
+
+</body>
+</html>

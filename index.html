@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CollegeHub - Home</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ewert&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<script type="text/javascript"
+src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+(function(){
+emailjs.init({
+publicKey: "J-kQj9zmQVikyCIYs",
+});
+})();
+</script>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>CollegeHub &hearts;</h1>
+            </div>
+            <ul class="sidebar" >
+                <li (click)="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="features.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+              </ul>
+            <nav>
+                <ul class="hidemobile">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="features.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+                    <li class="menu-button" (click)="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
+                
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <div class="afterHead">
+            <div class="container2">
+                <div class="title">
+                    <span>Welcome to CollegeHub &hearts;</span>
+                </div>
+                <div class="name">
+                    <span>
+                        <span>Your </span>Academic Journey
+                    </span><br>
+                    <span>Starts Here</span><br>
+                    <span>At CollegeHub, we streamline your academic journey by providing a one-stop solution for all your needs. </span>
+                </div>
+            </div>
+
+        </div>
+       
+    </main>
+
+    <!-- Services Section -->
+<div class="container-3">
+    <h2 class="services-heading">Our Top-Notch Services </h2>
+    <p class="services-intro">At CollegeHub, we provide a comprehensive suite of services designed to support every aspect of your academic life. Whether you need assistance with assignments or cutting-edge digital documents, our expert team is here to help you succeed. Explore our offerings below:</p>
+    
+    <div class="services-grid">
+        <div class="service-item">
+            <h3>Presentation Making</h3>
+            <p>Craft stunning and professional presentations that captivate your audience and convey your ideas effectively.</p>
+        </div>
+        <div class="service-item">
+            <h3>Project Reports</h3>
+            <p>Get well-structured and detailed project reports that meet all academic requirements and exceed expectations.</p>
+        </div>
+        <div class="service-item">
+            <h3>Synopsis</h3>
+            <p>Develop concise and compelling synopses that outline your project or research with clarity and precision.</p>
+        </div>
+        <div class="service-item">
+            <h3>Documents Making</h3>
+            <p>Create professional and organized documents for all your academic needs, ensuring quality and accuracy.</p>
+        </div>
+        <div class="service-item">
+            <h3>Digital Document Making</h3>
+            <p>Transform your documents into digital formats with ease, providing a modern touch to your paperwork.</p>
+        </div>
+        <div class="service-item">
+            <h3>Assignments</h3>
+            <p>Receive tailored assistance for assignments that not only meets deadlines but also enhances your understanding of the subject.</p>
+        </div>
+        <div class="service-item">
+            <h3>Project Support</h3>
+            <p>Explore innovative and practical project ideas that inspire and guide you towards successful execution.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Get in Touch Section -->
+ <div class="outer">
+    <div class="container-4">
+        <h2 class="get-in-touch-heading">Get in Touch</h2>
+        <form id="contactForm" class="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Details:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            
+            <label for="services">Services Needed:</label>
+            <select id="services" name="services" required>
+                <option >select</option>
+                <option value="Project">Project</option>
+                <option value="Assignment">Assignment</option>
+                <option value="Bonafide Format">Bonafide Format</option>
+                <option value="Provisional Certificate">Provisional Certificate</option>
+                <option value="Marksheet">Marksheet</option>
+                <option value="Notes Making">Notes Making</option>
+                <option value="Presentation Making">Presentation Making</option>
+            </select>
+            
+            <button type="submit" onclick="sendmail()">Submit</button>
+        </form>
+    </div>
+
+ </div>
+
+
+
+
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 CollegeHub | All Rights Reserved</p>
+    </footer>
+    <script src="index.js"></script>
+ 
+
+</body>
+</html>
