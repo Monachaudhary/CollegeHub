@@ -19,9 +19,17 @@ document.addEventListener('DOMContentLoaded', function() {
     hideSidebarButton.addEventListener('click', hideSidebar);
 });
 
+<<<<<<< HEAD
 // function sendmail(event){
 //     event.preventDefault();
 //     var params ={
+=======
+
+
+
+function sendmail(){
+    var params ={
+>>>>>>> cf75b1b53a250454363bf645f0e9d5127eb4a5b5
       
 //         message : document.getElementById("message").value,
 //         email_id : document.getElementById("email").value,
