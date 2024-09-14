@@ -97,7 +97,7 @@ nav ul li a:hover {
 
 .sidebar a {
     display: block;
-    color: white;
+    color: black;
     text-decoration: none;
     padding: 10px;
     margin: 5px 0;
@@ -127,6 +127,12 @@ nav ul li a:hover {
     .menu-button {
         display: block; /* Show menu button on mobile */
     }
+}
+@media (max-width: 768px) {
+    .services{
+        margin-bottom: 30px;
+    }
+   
 }
 main {
     margin-top: 80px; /* To avoid content being under the header */
@@ -159,7 +165,7 @@ footer {
 }
 
 .services h2 {
-    font-size: 36px;
+    
     margin-bottom: 10px;
     color: black;
 }
@@ -197,4 +203,5 @@ footer {
     font-size: 16px;
     color: #666;
 }
+
 
