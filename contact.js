@@ -50,7 +50,7 @@ function sendmail(event) {
 }
 
 document.getElementById("contactForm").addEventListener("submit", sendmail);
-=======
+
 function sendmail(){
     var params ={
       
@@ -67,4 +67,4 @@ function sendmail(){
     )
     .catch((err)=> console.log("there is error"));
 }
->>>>>>> cf75b1b53a250454363bf645f0e9d5127eb4a5b5
+
